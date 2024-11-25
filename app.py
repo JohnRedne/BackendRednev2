@@ -109,7 +109,7 @@ def generate_sismograma():
 
         # Guardar el gráfico en memoria como imagen PNG
         output_image = io.BytesIO()
-        plt.savefig(output_image, format='png', dpi=120, bbox_inches="tight")
+        plt.savefig(output_image, format='png', dpi=100, bbox_inches="tight")
         output_image.seek(0)
         plt.close(fig)
 
@@ -169,7 +169,7 @@ def generate_helicorder():
 
         # Guardar el gráfico en memoria como imagen PNG con mayor resolución
         output_image = io.BytesIO()
-        fig.savefig(output_image, format='png', dpi=150, bbox_inches="tight")  # DPI aumentado para mayor precisión
+        fig.savefig(output_image, format='png', dpi=100, bbox_inches="tight")  # DPI aumentado para mayor precisión
         output_image.seek(0)
         plt.close(fig)  # Cerrar el gráfico para liberar memoria
 
