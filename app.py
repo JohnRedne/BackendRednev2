@@ -63,6 +63,7 @@ def generate_sismograma():
 
         # Construir la URL para descargar el archivo MiniSEED desde Raspberry Shake
         url = f"http://osso.univalle.edu.co/fdsnws/dataselect/1/query?starttime={start}&endtime={end}&network={net}&station={sta}&location={loc}&channel={cha}&nodata=404"
+        #url = f"http://osso.univalle.edu.co/fdsnws/dataselect/1/query?starttime={start}&endtime={end}&network={net}&station={sta}&location={loc}&channel={cha}&nodata=404"
 
         #url = f"https://data.raspberryshake.org/fdsnws/dataselect/1/query?starttime={start}&endtime={end}&network={net}&station={sta}&location={loc}&channel={cha}&nodata=404"
         #       http://osso.univalle.edu.co/fdsnws/dataselect/1/query?starttime=2024-11-22T00%3A25%3A00&endtime=2024-11-22T00%3A26%3A00&network=UX&station=UIS09&location=00&channel=EHZ&nodata=404
